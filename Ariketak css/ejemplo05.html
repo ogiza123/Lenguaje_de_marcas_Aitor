@@ -1,10 +1,18 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      h1 {background-color: rgba(219, 135, 222, 0.698);}
+      .titulo-red {background-color: burlywood;}
+      #lehengoa {background-color: blue;}
+      #bigarrena {background-color: red;}
+    </style>
+  </head>
 <body> 
   <center><h1>TAULAK</h1></center>
   <table border="0" align="center" width="100%">
     <tr><!--Para unir celdas de la tabla utiliza "colspan" dentro de <td>-->
-                <td colspan="2" style="background-color:rgba(219, 135, 222, 0.698)"><h1 align="center">Anbotoko albisteak hauek dira</h1></td>     
+                <td colspan="2"><h1 align="center">Anbotoko albisteak hauek dira</h1></td>     
     </tr>
     <tr>
     <td width="30%" align="center">
@@ -21,7 +29,7 @@
                 </tr>
               </table>  
       </td>
-      <td align="center" style="background-color: burlywood">d</td>
+      <td align="center" class="titulo-red">d</td>
       </tr>
       <tr>
         <td width="30%" align="center">
@@ -37,7 +45,7 @@
                 </tr>
               </table>  
         </td>
-        <td align="center" style="background-color: blue">a</td>
+        <td align="center" id="lehengoa">a</td>
     </tr>
     <tr>
             <td width="30%" align="center">
@@ -53,7 +61,7 @@
                 </tr>
               </table>  
             </td>
-            <td style="background-color: brown" align="center">b</td>
+            <td id="bigarrena" align="center">b</td>
         </tr>
   </table>
 </body>
