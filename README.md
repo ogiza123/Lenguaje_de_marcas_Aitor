@@ -3,4 +3,4 @@
 
 ## HTML
 
-### Trabajo01 https://github.com/ogiza123/Lenguaje_de_marcas_Aitor/blob/master/Ariketak%20css/Trabajo01.html
+### Trabajo01css https://ogiza123.github.io/Lenguaje_de_marcas_Aitor/Ariketak_css/Trabajo01css.html
