@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+ body {
+     background-color: blueviolet;
+ }
+ table{
+     background-color: cornsilk;
+ }
+</style>
+ </head>
+<body>
+    <table border="1" align="center">
+        <tr>
+            <td>
+            <form action="echo5.php">
+                Usuario:
+                <input type="text" name="username"><br>
+                E-mail:
+                <input type="email" name="email"><br>
+                Contraseña:
+                <input type="password" name="psw"><br>
+                ¿Que utilizas para ir al trabajo?:<br>
+                <input type="checkbox" name="vehicle" value="Bike">Utilizo bici<br>
+                <input type="checkbox" name="vehicle" value="Car">Utilizo coche<br>
+                Nombre:
+                <input type="text" name="firstname"><br>
+                Apellidos:
+                <input type="text" name="lastname"><br>
+                Genero:<br>
+                <input type="radio" name="gender" value="male" checked> Hombre<br>
+                <input type="radio" name="gender" value="female"> Mujer<br>
+                <input type="radio" name="gender" value="other"> Prefiero no contestar<br>
+                Dirección:<br>
+                <textarea name="message" rows="10" cols="30"></textarea><br>
+
+                <input type="submit" value="Submit">
+            </form>
+            </td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
