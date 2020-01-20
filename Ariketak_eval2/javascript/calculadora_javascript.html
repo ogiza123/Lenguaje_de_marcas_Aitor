@@ -7,30 +7,30 @@
         <input type="text" id="resultado"><br><br>
         
         
-        <input type="text" id="numero1" ><br>
-        <input type="text" id="numero2" ><br><br>
+        <input type="text" id="x" ><br>
+        <input type="text" id="y" ><br><br>
         <button onclick="suma()">+</button>
         <button onclick="resta()">-</button>
         
 
         <script>
         function suma(){
-            var numero1 = 0, numero2 = 0, numero1_texto = "", numero2_texto = "", resultado = ""
-          numero1_texto = document.getElementById("numero1").value
-          numero2_texto = document.getElementById("numero2").value
-          numero1 = parseInt(numero1_texto)
-          numero2 = parseInt(numero2_texto)
-          resultado = numero1 + numero2
+            var x = 0, y = 0, x_texto = "", y_texto = "", resultado = ""
+          x_texto = document.getElementById("x").value
+          y_texto = document.getElementById("y").value
+          x = parseInt(x_texto)
+          y = parseInt(y_texto)
+          resultado = x + y
          document.getElementById("resultado").value = resultado;
         
         }
         function resta(){
-            var numero1 = 0, numero2 = 0, numero1_texto = "", numero2_texto = "", resultado = ""
-          numero1_texto = document.getElementById("numero1").value
-          numero2_texto = document.getElementById("numero2").value
-          numero1 = parseInt(numero1_texto)
-          numero2 = parseInt(numero2_texto)
-          resultado = numero1 - numero2
+            var x = 0, y = 0, x_texto = "", y_texto = "", resultado = ""
+          x_texto = document.getElementById("x").value
+          y_texto = document.getElementById("y").value
+          x = parseInt(x_texto)
+          y = parseInt(y_texto)
+          resultado = x - y
          document.getElementById("resultado").value = resultado;
         }
         </script>
