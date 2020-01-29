@@ -1,62 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
+<style>
+
+</style>
 </head>
 <body>
-
-<script>
-
-/*
-OHARRA: Ariketa hau egin baino lehen
-paperean algoritmoa egin 
-                                            |
-                            --------------(x<=y)-----------
-                            |                              | 
-                      ----(x<=z)----                 ----(y<=z)----
-                      |            |                 |             | 
-               ----(y<=z)----   [z<=x<=y]      ----(x<=z)----  [z<=y<=x]
-               |            |                  |            |
-           [x<=y<=z]    [x<=y<=z]          [y<=x<=z]    [y<=z<=x]
-*/
-
-var x = 0;
-var y = 5;
-var z = 3;
-
-function sort_xyz(x, y, z){
-    if (x <= y) {
-        if (x <= z) {
-            // x txikiena da
-            if (y <= z) {
-                console.log(x + "<=" + y + "<=" + z);
+    <script>
+        var x=5
+        var y=7
+        var z=9
+        function sort_xyz(x,y,z){
+            if (x<=y){
+                if (y<=z){
+                    console.log(x+"<="+y+"<="+z);
+                } else {
+                    console.log(x+"<="+z+"<="+y);
+                }
+            if (y<=x){
+                if (x<=z){
+                    console.log(y+"<="+x+"<="+z);    
             } else {
-                console.log(x + "<=" + z + "<=" + y);
+                    console.log(y+"<="+z+"<="+x);                
             }
-        } else {
-            // z txikiena da
-            console.log(z + "<=" + x + "<=" + y);
-        }
-    } else {
-        // y < x
-        if (y <= z) {
-            // y txikiena da
-            if (x <= z) {
-                console.log(y + "<=" + x + "<=" + z);
-            } else {
-                console.log(y + "<=" + z + "<=" + x);
-            }
-        } else {
-            // z txikiena da
-            console.log(z + "<=" + y + "<=" + x);
-        }
 
-    }
-}
-
-
-</script>
-
-
-</body>
+    </script>    
+        
+    </body>
 </html>
