@@ -1,30 +1,51 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-
-</style>
+<meta charset="UTF-8">
 </head>
 <body>
+    <input type="text" id="x">
+    <input type="text" id="y">
+    <input type="text" id="z">
+    <input type="button" value="sort" onclick="sort_xyz_input()">
+    <p id="resultado"></p>
+
     <script>
-        var x=5
-        var y=7
-        var z=9
+        var x=0;
+        var y=0;
+        var z=0;
         function sort_xyz(x,y,z){
             if (x<=y){
                 if (y<=z){
+                    if (y <= z) {
                     console.log(x+"<="+y+"<="+z);
+                    } else {
+                        console.log(x+"<="+z+"<="+y);
+                    }
                 } else {
-                    console.log(x+"<="+z+"<="+y);
+                    console.log(z + "<=" + x + "<=" + y);
                 }
+            }
             if (y<=x){
                 if (x<=z){
                     console.log(y+"<="+x+"<="+z);    
             } else {
-                    console.log(y+"<="+z+"<="+x);                
+                    console.log(y+"<="+z+"<="+x);
+                }                
             }
+        }    
 
+        function sort_xyz_input(){
+            x = parseInt(document.GetElementById("x").value);
+            y = parseInt(document.GetElementById("y").value);
+            z = parseInt(document.GetElementById("z").value);
+            
+            sorted_nums = sort_xyz(x,y,z);
+    console.log(sorted_nums);
+    document.getElementById("resultado").innerHTML = sorted_nums.x+"<="+sorted_nums.y+"<="+sorted_nums.z;  
+}
+    
     </script>    
         
     </body>
-</html>
+</html> 
