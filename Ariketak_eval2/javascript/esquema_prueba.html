@@ -11,34 +11,45 @@
     <p id="resultado"></p>
 
     <script>
-        var x=0;
-        var y=0;
-        var z=0;
+        
         function sort_xyz(x,y,z){
+            n1=0;
+            n2=0;
+            n3=0;
             if (x<=y){
                 if (y<=z){
                     if (y <= z) {
                     console.log(x+"<="+y+"<="+z);
+                    n1=x; n2=y; n3=z;
                     } else {
                         console.log(x+"<="+z+"<="+y);
+                        n1=x; n2=z; n3=y;
                     }
                 } else {
                     console.log(z + "<=" + x + "<=" + y);
+                    n1=z; n2=x; n3=y;
                 }
             }
             if (y<=x){
                 if (x<=z){
-                    console.log(y+"<="+x+"<="+z);    
+                    console.log(y+"<="+x+"<="+z);
+                    n1=y; n2=x; n3=z;    
             } else {
                     console.log(y+"<="+z+"<="+x);
-                }                
-            }
+                    n1=y; n2=z; n3=x;
+                }
+            } else {
+            n1=z; n2=y; n3=x;
+        }
+        console.log(n1 + "<=" + n2 + "<=" + n3);
+    
+    return {x:n1, y:n2, z:n3};   
         }    
 
         function sort_xyz_input(){
-            x = parseInt(document.GetElementById("x").value);
-            y = parseInt(document.GetElementById("y").value);
-            z = parseInt(document.GetElementById("z").value);
+            x = parseInt(document.getElementById("x").value);
+            y = parseInt(document.getElementById("y").value);
+            z = parseInt(document.getElementById("z").value);
             
             sorted_nums = sort_xyz(x,y,z);
     console.log(sorted_nums);
