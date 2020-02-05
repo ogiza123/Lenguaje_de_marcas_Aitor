@@ -2,29 +2,51 @@
 <html>
 <head>
 <style>
-    table{
-        width: 50%;
-        height: 50%;
-        position: absolute;
-    }
+.tabla {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    background-color:cornflowerblue;
+    width: 32%;
+    padding-bottom: 32%;
+    margin-bottom: 2%;
+    position: relative;
+}
 </style>
 </head>
 <body>
-<table border=1 witdh="200%">
-    <tr>
-        <td>f</td>
-        <td>f</td>
-        <td>f</td>
-    </tr>
-    <tr>
-        <td>f</td>
-        <td>f</td>
-        <td>f</td>
-    </tr>
-    <tr>
-        <td>f</td>
-        <td>f</td>
-        <td>f</td>
-    </tr>
-</table>
+    <div class="tabla">
+        <div id="item1" class="item">1</div>
+        <div id="item1" class="item">2</div>
+        <div id="item1" class="item">3</div>
+    
+        <div id="item1" class="item">4</div>
+        <div id="item1" class="item">5</div>
+        <div id="item1" class="item">6</div>
+    
+        <div id="item1" class="item">7</div>
+        <div id="item1" class="item">8</div>
+        <div id="item1" class="item">9</div>
+    </div>
+    <script>
+    
+    
+    function poner_ficha(x,y){
+    // casilla ocupada?
+    if (tablero[x][y] != 0) {
+        console.log("casilla ocupada");
+    } else {
+        tablero[x][y] = turno;
+        if (turno==1)
+            turno=2;
+        else
+            turno=1;
+    }
+    // 
+}
+    </script>
 </html>
