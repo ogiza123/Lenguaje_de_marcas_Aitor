@@ -43,37 +43,24 @@
     </head>
     <body>
         
-        <!--Fila 1-->
         <div class="flex-container">
                 <div>
-                   <!--Boton1-->
-                    <button id="cuadrado1" class="boton"  onclick="turnos1()"></button> 
-                    <!--Boton2-->
-                       <button id="cuadrado2" class="boton"  onclick="turnos2()"></button>
-                    <!--Boton3-->
-                       <button id="cuadrado3" class="boton" onclick="turnos3()"></button>
-                       
-                       <p id="jugador1" class="parrafo1">Jugador 1: 0</p>
+                    <button id="cuadrado1" class="boton"  onclick="turno1()"></button> 
+                    <button id="cuadrado2" class="boton"  onclick="turno2()"></button>
+                    <button id="cuadrado3" class="boton" onclick="turno3()"></button>
                 </div>
 
                 <div>
-                    <!--Boton4-->
-                    <button id="cuadrado4" class="boton"  onclick="turnos4()"></button> 
-                    <!--Boton5-->
-                       <button id="cuadrado5" class="boton"  onclick="turnos5()"></button>
-                    <!--Boton6-->
-                       <button id="cuadrado6" class="boton" onclick="turnos6()"></button>
-                       
-                       <p id="jugador2" class="parrafo2">Jugador 2: 0</p>
+
+                    <button id="cuadrado4" class="boton"  onclick="turno4()"></button> 
+                    <button id="cuadrado5" class="boton"  onclick="turno5()"></button>
+                    <button id="cuadrado6" class="boton" onclick="turno6()"></button>
                 </div>
 
                 <div>
-                    <!--Boton 7--> 
-                    <button id="cuadrado7" class="boton"  onclick="turnos7()"></button> 
-                    <!--Boton8-->
-                       <button id="cuadrado8" class="boton"  onclick="turnos8()"></button>
-                    <!--Boton9-->
-                       <button id="cuadrado9" class="boton" onclick="turnos9()"></button>
+                    <button id="cuadrado7" class="boton"  onclick="turno7()"></button> 
+                    <button id="cuadrado8" class="boton"  onclick="turno8()"></button>
+                    <button id="cuadrado9" class="boton" onclick="turno9()"></button>
                 </div>
 
                 <div>
@@ -85,7 +72,7 @@
         <script>
             var jug_turno = false, cuadrado1 = "", cuadrado2 = "", cuadrado3 = "", cuadrado4 = "", cuadrado5 = "", cuadrado6 = "", cuadrado7 = "", cuadrado8 = "", cuadrado9 = "", jugador1 = 0, jugador2= 0;
         /*Bat1*/
-            function turnos1(){
+            function turno1(){
                 
                 if(jug_turno == false){
                     if(cuadrado1 == "red" || cuadrado1 == "blue"){
@@ -113,7 +100,7 @@
             }
 
             /*Bi2*/
-                function turnos2(){
+                function turno2(){
                 
                     if(jug_turno == false){
                         if(cuadrado2 == "red" || cuadrado2 == "blue"){
@@ -141,7 +128,7 @@
                 }
 
                 /*Hiru3*/
-                function turnos3(){
+                function turno3(){
                 
                     if(jug_turno == false){
                         if(cuadrado3 == "red" || cuadrado3 == "blue"){
@@ -168,7 +155,7 @@
                     }
                 }    
                 /*Lau4*/
-                function turnos4(){
+                function turno4(){
                 
                     if(jug_turno == false){
                         if(cuadrado4 == "red" || cuadrado4 == "blue"){
@@ -195,7 +182,7 @@
                     }
                 }    
                 /*Bost5*/
-                function turnos5(){
+                function turno5(){
                 
                     if(jug_turno == false){
                         if(cuadrado5 == "red" || cuadrado5 == "blue"){
@@ -222,7 +209,7 @@
                     }
                 }    
                 /*Sei6*/
-                function turnos6(){
+                function turno6(){
                     
                     if(jug_turno == false){
                         if(cuadrado6 == "red" || cuadrado6 == "blue"){
@@ -250,7 +237,7 @@
                 }
 
                 /*Zazpi7*/
-                function turnos7(){
+                function turno7(){
                     
                     if(jug_turno == false){
                         if(cuadrado7 == "red" || cuadrado7 == "blue"){
@@ -278,7 +265,7 @@
                 }
 
                     /*Zortzi8*/
-                function turnos8(){
+                function turno8(){
                     
                     if(jug_turno == false){
                         if(cuadrado8 == "red" || cuadrado8 == "blue"){
@@ -306,7 +293,7 @@
                 }
 
                     /*Bederatzi9*/
-                function turnos9(){
+                function turno9(){
                     
                     if(jug_turno == false){
                         if(cuadrado9 == "red" || cuadrado9 == "blue"){
@@ -340,7 +327,6 @@
                     cuadrado3 == "red" & cuadrado5 == "red" & cuadrado7 == "red" || cuadrado1 == "red" & cuadrado4 == "red" & cuadrado7 == "red" ||
                     cuadrado2 == "red" & cuadrado5 == "red" & cuadrado8 == "red" || cuadrado3 == "red" & cuadrado6 == "red" & cuadrado9 == "red"){
                         alert("Jugador 1 gana");
-                        puntuacion1();
                         reset();
                     }
                 }
@@ -351,22 +337,21 @@
                     cuadrado3 == "blue" & cuadrado5 == "blue" & cuadrado7 == "blue" || cuadrado1 == "blue" & cuadrado4 == "blue" & cuadrado7 == "blue" ||
                     cuadrado2 == "blue" & cuadrado5 == "blue" & cuadrado8 == "blue" || cuadrado3 == "blue" & cuadrado6 == "blue" & cuadrado9 == "blue"){
                         alert("Jugador 2 gana");
-                        puntuacion2();
                         reset();
                     }
                 }
 
                 function reset(){
                     jug_turno = false, cuadrado1 = "", cuadrado2 = "", cuadrado3 = "", cuadrado4 = "", cuadrado5 = "", cuadrado6 = "", cuadrado7 = "", cuadrado8 = "", cuadrado9 = "";
-                    document.getElementById("cuadrado1").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado2").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado3").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado4").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado5").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado6").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado7").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado8").style.backgroundColor = 'green'
-                    document.getElementById("cuadrado9").style.backgroundColor = 'green'
+                    document.getElementById("cuadrado1").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado2").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado3").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado4").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado5").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado6").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado7").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado8").style.backgroundColor = 'white'
+                    document.getElementById("cuadrado9").style.backgroundColor = 'white'
                 }
         </script>
 
