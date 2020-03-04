@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="esp">
+  <head>
+    <!--tildes y ñ y cosas asi, para que aparezcan-->
+    <meta charset="utf-8">
+    <!--para que se ajuste las imagenes y todo a todo tipo de pantalla-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Brloy</title>
+  </head>
+  <body>
+    <h1>vamoh a calmarno</h1>
+    <!--container en horizontal--> 
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            vamoh
+          </div>
+          <div class="col-sm">
+            a
+          </div>
+          <div class="col-sm">
+            calmarno
+          </div>
+        </div>
+      </div>
+      <!--primera letra fuerte y la segunda difuminada--> 
+      <h3>
+        VAMOH
+        <small class="text-muted">a calmarno</small>
+      </h3>
+      <br>
+      <br>
+      <br>
+    <!--Elementos de texto en línea-->
+    <!--marcado con mas importancia-->  
+    <p>You can use the mark tag to <mark>highlight</mark> text.</p>
+    <!--texto para eliminar--> 
+    <p><del>This line of text is meant to be treated as deleted text.</del></p>
+    <!--texto que esta mal--> 
+    <p><s>This line of text is meant to be treated as no longer accurate.</s></p>
+    <!--texto a añadir al documento--> 
+    <p><ins>This line of text is meant to be treated as an addition to the document.</ins></p>
+    <!--texto simplemente subrayado--> 
+    <p><u>This line of text will render as underlined</u></p>
+    <!--texto con mlinea fina--> 
+    <p><small>This line of text is meant to be treated as fine print.</small></p>
+    <!--texto con linea fuerte--> 
+    <p><strong>This line rendered as bold text.</strong></p>
+    <!--texto en cursiva--> 
+    <p><em>This line rendered as italicized text.</em></p>
+    <br>
+    <br>
+    <br>
+    <!--Lista de descripciones alineación-->
+    <dl class="row">
+        <dt class="col-sm-3">Description lists</dt>
+        <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+      
+        <dt class="col-sm-3">Euismod</dt>
+        <dd class="col-sm-9">
+          <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+          <p>Donec id elit non mi porta gravida at eget metus.</p>
+        </dd>
+      
+        <dt class="col-sm-3">Malesuada porta</dt>
+        <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+      
+        <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+        <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</dd>
+      
+        <dt class="col-sm-3">Nesting</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4">Nested definition list</dt>
+            <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+          </dl>
+        </dd>
+      </dl>
+      <br>
+      <br>
+      <br>
+      <table class="table"><!--"table table-dark" para tabla en negro-->
+        <thead><!--en cabeza de la tabla y (class="thead-dark") para cabeza de tabla en negro-->
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">First</th>
+            <th scope="col">Last</th>
+            <th scope="col">Handle</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry</td>
+            <td>the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <br>
+      <br>
+      <!--para borde de imagen redondita (class="figure-img img-fluid rounded")-->
+      <figure class="figure">
+        <img src="https://www.gamecored.com/wp-content/uploads/2018/10/portadasnotas18-1620x800.jpg" class="figure-img img-fluid rounded" alt="Responsive image">
+        <figcaption class="figure-caption">A caption for the above image.</figcaption>
+      </figure>
+      <br>
+      <br>
+      <br>
+      <h1>Alertas</h1>
+      <!--alerta de haberlo hecho bien-->
+      <div class="alert alert-success" role="alert">
+        <h4 class="alert-heading">Well done!</h4>
+        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+        <hr>
+        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+      </div>
+      <br>
+      <br>
+      <br>
+      <!--alerta de que tienes que hacer algo-->
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Santo guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
